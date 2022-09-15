@@ -191,6 +191,8 @@
                     android:fontFamily="@font/poppins"
                     android:textSize="15dp"
                     android:hint="Nombre..."
+                    android:textColorHint="#C9C9C9"
+                    android:textColor="@color/black"
                     android:inputType="text"></EditText>
             </LinearLayout>
         </LinearLayout>
@@ -244,14 +246,60 @@
                     android:fontFamily="@font/poppins"
                     android:textSize="15dp"
                     android:hint="Fecha de nacimiento..."
+                    android:textColor="@color/black"
+                    android:textColorHint="#C9C9C9"
                     android:inputType="date"
                     android:focusable="false"
                     android:clickable="true"
                     android:maxLines="1"></EditText>
             </LinearLayout>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/radius_shape">
+
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:id="@+id/textView7"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:text="Presiona el botón para continuar"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
 
 
+            <Button
+                android:layout_width="200dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_button"
+                android:elevation="10dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:fontFamily="@font/poppins"
+                android:text="CONOCER MI EDAD"
+                android:textStyle="bold">
+            </Button>
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
