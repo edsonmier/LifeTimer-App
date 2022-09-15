@@ -236,6 +236,7 @@
                 android:orientation="horizontal"
                 android:gravity="center">
                 <EditText
+                    android:id="@+id/dateText"
                     android:paddingTop="5dp"
                     android:background="@null"
                     android:layout_width="180dp"
@@ -243,7 +244,10 @@
                     android:fontFamily="@font/poppins"
                     android:textSize="15dp"
                     android:hint="Fecha de nacimiento..."
-                    android:inputType="date"></EditText>
+                    android:inputType="date"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:maxLines="1"></EditText>
             </LinearLayout>
         </LinearLayout>
 
